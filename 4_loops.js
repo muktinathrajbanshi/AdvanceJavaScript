@@ -80,7 +80,64 @@ var isRegistered = true; // Assume false for not registered, true for registered
     //     console.log("odd");
     // }
 //! 2: Write a program to check if a number is prime.
+
+    // var num = 13;
+    // var isPrime = true;
+
+    // for(var i = 2; i<num; i++) {
+    //     if(num % i ===0) {
+    //         isPrime = false;
+    //         break;
+    //     }
+    // }
+
+    // if(isPrime) {
+    //     console.log("Num is prime");
+    // } else {
+    //     console.log("Num is not prime");
+    // }
+
+//! Generating a Times Table:
+//! Example 3: Generating a times table of 5 with a for loop.
     
+    // for (var i = 1; i<=10; i++) {
+    //     console.log("5 * "+ i + " = "+ 5*i);
+    // }
+
+//! Homework : JavaScript program to print table for given number (8,9,12,15) using for loop?
+
+//? More Practice
+//!1: program to check if a year is a leap year
+
+//? if a year is divisible by 4 and not divisible by 100, or if a year is divisible by
+//? 400, then it is a leap year. Otherwise, it is not a leap year.
+
+    // var year = 2024;
+    // if((year % 4 ===0 && year % 100 !== 0) || (year % 400 === 0)) {
+    //      console.log(year,"it is a leap year")
+    // } else {
+    //     console.log (year,"it is not a leap year");
+    // }
+
+//! 2: Drawing Patterns with Asterisks:
+
+//*     i\j   1   2   3   4   5
+//*      1    *    -   -   -   -
+//*      2    *    *   -   -   -
+//*      3    *    *   *   *   -
+//*      4    *    *   *   *   -
+//*      5    *    *   *   *   *
+
+
+    for(var i=1; i<=5; i++) {
+        var pattern = "";
+        for(var j=1; j<=i; j++) {
+            pattern = pattern + " *"
+        }
+        console.log(pattern);
+    }
+
+
 //todo Prime numbers are numbers that have only 2 factors: 1 and themselves.
 //? All prime numbers greater than 2 are odd.
 //? However, not all odd numbers are prime.
@@ -222,13 +279,14 @@ var isRegistered = true; // Assume false for not registered, true for registered
 //! practice 🧑‍💻
 //? let's create a table of 5
 
-    var i = 1;
-    var result = 5;
+    // var i = 1;
+    // var result = 5;
 
-    while (i<=10) {
-        console.log(result + " * " + i + " = " +  result*i);
-        i++
-    }
+    // while (i<=10) {
+    //     console.log(result + " * " + i + " = " +  result*i);
+    //     // console.log(`5 * ${i} = ${5 * i}`);
+    //     i++
+    // }
 
 //* ===============================
 //* Do-While Loop
@@ -242,13 +300,15 @@ var isRegistered = true; // Assume false for not registered, true for registered
 //   // Code to be executed at least once
 // } while (condition);
 
+
+
+//* Simple do...while loop to count from 1 to 10 🧑‍💻
+
 //  var i = 10;
 //   do{
 //     console.log(i);
 //     i++;
 //   }while(i<=10);
-
-//* Simple do...while loop to count from 1 to 10 🧑‍💻
 
 //? Common Use Cases:
 // When you want to guarantee the execution of the loop body at least once.
@@ -256,6 +316,14 @@ var isRegistered = true; // Assume false for not registered, true for registered
 // the first iteration.
 
 //? Example: Validating User Input with a Do...While Loop(user need to write a valid number) 🧑‍💻
+
+    // var userInput;
+    // var positiveNumber;
+    // do {
+    //     userInput = prompt("Enter any positive number");
+    //     positiveNumber = parseFloat(userInput);
+    // }while (isNaN(positiveNumber) || positiveNumber < 0);
+    // console.log("You entered a valid positive number:", positiveNumber);
 
 //* ===============================
 //* For Loop
@@ -279,11 +347,15 @@ var isRegistered = true; // Assume false for not registered, true for registered
     // }
 
 //? Key Point:
-// The initialization, condition, and iteration expressions are optional. You can omit any or all of them, but you must include the semicolons.
-//* The code for (;;) {} represents an infinite loop in JavaScript. This construct is commonly used when you want a loop to run indefinitely or until a break statement is encountered within the loop. It's equivalent to while (true) {}.
+// The initialization, condition, and iteration expressions are optional. You can omit any or all of them, but you 
+// must include the semicolons.
+//* The code for (;;) {} represents an infinite loop in JavaScript. This construct is commonly used when you want a 
+//* loop to run indefinitely or until a break statement is encountered within the loop. It's equivalent to while
+//*  (true) {}.
 
 //* use case: Game Development:
-//? In game development, an infinite loop can be used to continuously update and render game frames until a specific condition (e.g., game over) is met.
+//? In game development, an infinite loop can be used to continuously update and render game frames until a specific
+//?  condition (e.g., game over) is met.
 
 // for (;;) {
 //   // Update game logic and render frames
@@ -296,6 +368,12 @@ var isRegistered = true; // Assume false for not registered, true for registered
 
 //! practice :
 //! Calculate the sum of numbers from 1 to 10 using a for loop 🧑‍💻
+//     var sum = 0;
+//    for (var i = 1; i<=10; i++) {
+//     debugger;
+//         sum = sum + i;
+//    }
+//    console.log(sum);
 
 //! Generating a Times Table:🧑‍💻
 //! Example 3: Generating a times table of 5 with a for loop.
