@@ -6,66 +6,113 @@
 //* LET AND CONST - EcmaScript 2015
 //* =====================================
 
-//? let Keyword:  The let keyword is used to declare variables with block scope. Variables declared with let are mutable, meaning their values can be reassigned.
+//? let Keyword:  The let keyword is used to declare variables with block scope. Variables declared with let are 
+//? mutable, meaning their values can be reassigned.
 
-//? const Keyword: The const keyword is used to declare variables with block scope, but once a value is assigned to a const variable, it cannot be reassigned. const variables are immutable.
+  // var myFavWorldBestName = "muktinath";
+  // myFavWorldBestName = "muktinath rajbanshi";
+  // console.log(myFavWorldBestName);
+
+  // let myFavWorldBestName = "muktinath";
+  // myFavWorldBestName = "muktinath rajbanshi";
+  // console.log(myFavWorldBestName);
+
+//? const Keyword: The const keyword is used to declare variables with block scope, but once a value is assigned to
+//?  a const variable, it cannot be reassigned. const variables are immutable.
+
+  // const myFavWorldBestName = "muktinath";
+  // // myFavWorldBestName = "muktinath rajbanshi";
+  // console.log(myFavWorldBestName);
 
 // //? 1st show what var can do
 
+  // var name = "rajbanshi";
+
+  // if (true) {
+  //  var name = "muktinath";
+  //   console.log(name);
+  // }
+
+  // name = "nepal";
+  // console.log(name);
+
 //? ex2: with the help of let keyword
-// let name = "thapa";
+  // let name = "rajbanshi";
 
-// if (true) {
-//   name = "vinod";
-//   console.log(name);
-// }
+  // if (true) {
+  //   name = "muktinath";
+  //   console.log(name);
+  // }
 
-// name = "technical";
-// console.log(name);
+  // name = "nepal";
+  // console.log(name);
 
-//? ex2: with the help of let keyword
-// const name = "thapa";
+//? ex3: with the help of let keyword
+  // const name = "rajbanshi";
 
-// if (true) {
-//   const name = "vinod";
-//   console.log(name);
-// }
+  // if (true) {
+  //   const name = "muktinath";
+  //   console.log(name);
+  // }
 
-// name = "technical";
-// console.log(name);
+  // name = "nepal";
+  // console.log(name);
 
-// var
-// if (true) {
-//   var name = "vinod";
-//   console.log(name);
-// }
-// name = "technical";
-// console.log(name);
+  //var
+    // if (true) {
+    //   var name = "muktinath";
+    //   console.log(name);
+    // }
+    // name = "rajbanshi";
+    // console.log(name);
 
-// let
-// if (true) {
-//   let name = "vinod";
-//   console.log(name);
-// }
-// // name = "technical";
-// console.log(name);
+
+    //let
+    // if (true) {
+    //   var name = "muktinath";
+    //   console.log(name);
+    // }
+    // // name = "rajbanshi";
+    // console.log(name);
+  
+
+  
 
 //* ==========================================
 //* TEMPLATE STRINGS - EcmaScript 2015
 //* =========================================
 
-//? In ECMAScript 6 (ES6), template strings, also known as template literals, provide a convenient and flexible way to create strings in JavaScript. Template strings are enclosed in backticks (``) rather than single or double quotes.
+//? In ECMAScript 6 (ES6), template strings, also known as template literals, provide a convenient and flexible way
+//?  to create strings in JavaScript. Template strings are enclosed in backticks (``) rather than single or double
+//?  quotes.
 
-// let firstName = "vinod";
-// let lastName = "thapa";
+// let firstName = "muktinath";
+// let lastName = "rajbanshi";
 
 // // Using template string for string interpolation
+// let fullName = firstName + lastName;
+// let fullName = `${firstName} ${lastName}`;
+// console.log(fullName);
 
-//? String Interpolation:  Template strings support string interpolation, allowing you to embed expressions directly within the string. Interpolated expressions are enclosed in ${}
+//? String Interpolation:  Template strings support string interpolation, allowing you to embed expressions directly 
+//? within the string. Interpolated expressions are enclosed in ${}
 
-// let age = 30;
+// let age = 24;
 
-// // String interpolation with variable
+// String interpolation with variable
+//  let message = `I am ${age} years old.`;
+//  console.log(message);
+
+//Multi-line Strings: Template strings make it easy to create multi-line strings without the need for
+// concatenation or escape characters.
+
+//  let multiLineString = `
+//      This is a multi-line
+//      string using template literals.
+//      It's much cleaner and easier to read.
+//      `;
+     
+//      console.log(multiLineString);
 
 //? Expression Evaluation: Template expressions can include any valid JavaScript expression.
 
@@ -87,17 +134,41 @@
 //* DEFAULT Parameters
 //* =========================================
 
-//? In ECMAScript 6 (ES6), default parameters were introduced, providing a more concise way to handle function parameter defaults. Default parameters allow you to specify default values for function parameters in the function declaration itself. If a parameter is not provided when the function is called, the default value is used.
+//? In ECMAScript 6 (ES6), default parameters were introduced, providing a more concise way to handle function parameter
+//?  defaults. Default parameters allow you to specify default values for function parameters in the function 
+//? declaration itself. If a parameter is not provided when the function is called, the default value is used.
 
-//? Default function parameters allow named parameters to be initialized with default values if no value or undefined is passed.
+//? Default function parameters allow named parameters to be initialized with default values if no value or undefined
+//?  is passed.
 
 //! Write a function to find sum of two numbers? What if during function call user only passed one argument?
+// default parameter
+  // function sum(a = 20, b = 10) {
+  //   return a + b;
+  // }
+  // console.log(sum(10, 15));
 
 //* ==========================================
 //*  FAT ARROW FUNCTION
 //* =========================================
 
-//? In ECMAScript 6 (ES6), arrow functions, also known as fat arrow functions, were introduced as a concise way to write anonymous functions.
+//? In ECMAScript 6 (ES6), arrow functions, also known as fat arrow functions, were introduced as a concise way to
+//?  write anonymous functions.
+
+  // const sum = function (a, b) {
+  //   let result = `The sum of ${a} and ${b} is ${a+b}.`;
+  //   console.log(result);
+  // }
+  // sum(5,5);
+
+  // const sum = (a, b) => {
+  //   let result = `The sum of ${a} and ${b} is ${a+b}.`;
+  //   console.log(result);
+  // }
+  // sum(10,5);
+
+  // const sum = (a, b) => console.log(`The sum of ${a} and ${b} is ${a + b}.`);
+  // sum(30, 20);
 
 //! How to convert the same in fat arrow function
 // Syntax
@@ -106,9 +177,12 @@
 //     return result; // Optional
 //   };
 
+
+
 // todo NOTES
 
-// //?🚀 1: If the function body consists of a single expression, the braces {} and the return keyword can be omitted.
+// //?🚀 1: If the function body consists of a single expression, the braces {} and the return keyword can be 
+//? omitted.
 // const sum = (a, b) => `The sum of ${a} and ${b} is ${a + b}`;
 // console.log(sum(5, 5));
 
@@ -117,8 +191,8 @@
 // console.log(square(5));
 
 // //? 🚀 3: If there are no parameters, use an empty set of parentheses ().
-// const greet = () => console.log("Plz LIKE SHARE & SUBSCRIBE!");
-// greet();
+const greet = () => console.log("Plz LIKE SHARE & SUBSCRIBE!");
+greet();
 
 //! ==========================================
 //!  Part 2 of Modern JavaScript
@@ -227,12 +301,12 @@ const user = { name: "Vinod", age: 30 };
 // };
 
 //? with rest parameters
-const sum = (a, b, ...numbers) => {
-  //   console.log(typeof numbers);
-  return numbers.reduce((accum, curVal) => (accum = accum + curVal), 0);
-};
+// const sum = (a, b, ...numbers) => {
+//   //   console.log(typeof numbers);
+//   return numbers.reduce((accum, curVal) => (accum = accum + curVal), 0);
+// };
 
-console.log(sum(1, 2, 3, 4));
+// console.log(sum(1, 2, 3, 4));
 
 //TODO NOTE: A function definition can only have one rest parameter, and the rest parameter must be the last parameter in the function definition.
 // function wrong1(...one, ...wrong) {}
