@@ -191,8 +191,8 @@
 // console.log(square(5));
 
 // //? 🚀 3: If there are no parameters, use an empty set of parentheses ().
-const greet = () => console.log("Plz LIKE SHARE & SUBSCRIBE!");
-greet();
+// const greet = () => console.log("Plz LIKE SHARE & SUBSCRIBE!");
+// greet();
 
 //! ==========================================
 //!  Part 2 of Modern JavaScript
