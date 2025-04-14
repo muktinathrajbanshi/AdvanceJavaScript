@@ -458,9 +458,9 @@
 // initialValue (optional): An initial value for the accumulator. If not provided, the first element of the array 
 // is used as the initial accumulator value.
 
-    const productPrice = [100, 200, 300, 400, 500];
+    // const productPrice = [100, 200, 300, 400, 500];
 
-    const totalPrice = productPrice.reduce((accum, curElem) => {
-        return accum + curElem;
-    }, 0);
-    console.log(totalPrice);
+    // const totalPrice = productPrice.reduce((accum, curElem) => {
+    //     return accum + curElem;
+    // }, 0);
+    // console.log(totalPrice);

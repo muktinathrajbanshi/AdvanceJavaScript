@@ -129,13 +129,13 @@ var isRegistered = true; // Assume false for not registered, true for registered
 //*      5    *    *   *   *   *
 
 
-    for(var i=1; i<=5; i++) {
-        var pattern = "";
-        for(var j=1; j<=i; j++) {
-            pattern = pattern + " *"
-        }
-        console.log(pattern);
-    }
+    // for(var i=1; i<=5; i++) {
+    //     var pattern = "";
+    //     for(var j=1; j<=i; j++) {
+    //         pattern = pattern + " *"
+    //     }
+    //     console.log(pattern);
+    // }
 
 
 //todo Prime numbers are numbers that have only 2 factors: 1 and themselves.
