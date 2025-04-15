@@ -58,8 +58,26 @@
 // console.log(2 ** 3);
 
 //? Math.sqrt(): Math.sqrt(x) returns the square root of x:
-let squareRoot = Math.sqrt(25);
-console.log(squareRoot);
+// let squareRoot = Math.sqrt(25);
+// console.log(squareRoot);
+
+//? Math.log(x) returns the natural logarithm of x.
+// let logResult = Math.log(1);
+// let logResult = Math.log(2);
+// console.log(logResult);
+
+//? Math.log2(x) returns the base 2 logarithm of x.
+// let logResult = Math.log2(8);
+// console.log(logResult);
+
+//* ===================================================
+//* Interview Question
+//*====================================================
+
+//! Generate Random number
+//? Math.random(): Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
+
+console.log((Math.random() * 100).toFixed(3));
 
 
 
