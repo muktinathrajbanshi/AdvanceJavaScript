@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             body {
+                margin: 0;
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                background: #232729;
+                background: linear-gradient(90deg, rgba(35, 39, 41, 1) 0%, rgba(63, 71, 66, 1) 50%, rgba(97, 96, 88, 1) 100%);
+             }
+
+             .btnSection {
+                justify-content: center;
+                text-align: center;
+                padding: 21rem;
+                /* margin: 2rem; */
+             }
+             #addBtn,
+             #getBtn,
+             #removeBtn{
+                padding: 1rem;
+                border-radius: 13px;
+                margin-right: 18px;
+             }
+             #addBtn {
+                background-color: #c2eb0d;
+             }
+             #getBtn {
+                background-color: #61c06f;
+             }
+             #removeBtn {
+                background-color: #c22557;
+             }
+             #addBtn:hover{
+                cursor: pointer;
+                color: white;
+             }
+             #getBtn:hover{
+                cursor: pointer;
+                color: white;
+             }
+             #removeBtn:hover{
+                cursor: pointer;
+                color: white;
+             }
+    </style>
+</head>
+<body>
+      <div class="btnSection">
+        <button id="addBtn">Add Data to localStorage</button>
+        <button id="getBtn">Get Data from localStorage</button>
+        <button id="removeBtn">Delete Data from localStorage</button>
+      </div>
+      <script>
+        const studentBioData = {
+            firstName: "Muktinath",
+            lastName: "Rajbanshi",
+            age: 23,
+            gender: "Male",
+            grade: "A",
+            courses: ["Math", "Science", "English"],
+            address: {
+                street: "123 Main St",
+                city: "Cityville",
+                state: "State",
+                zipCode: "12345",
+            },
+        };
+
+        // Add to Local Storage 
+        const addTodoList = () => {
+            // localStorage.setItem("objectData", "studentBioData");
+            localStorage.setItem("objectData", JSON.stringify(studentBioData));
+        };
+
+        // Get from local Storage
+        const getTodoList = () => {
+            const retrievedStudentData = JSON.parse(localStorage.getItem("objectData"));
+            console.log("Retrieved from Local Storage:", retrievedStudentData);
+        };
+
+        // Remove from Local Storage
+        const removeTodoList = () => {
+            const removedData = localStorage.removeItem("objectData");
+            // Verify removal
+            console.log("Data after removal:", removedData);
+        }
+
+        document.getElementById("addBtn").addEventListener("click", () => {
+            addTodoList();
+        });
+        document.getElementById("getBtn").addEventListener("click", () => {
+            getTodoList();
+        });
+
+        document.getElementById("removeBtn").addEventListener("click", () => {
+            removeTodoList();
+        });
+
+      </script>
+</body>
+</html>
