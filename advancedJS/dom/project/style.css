@@ -29,16 +29,38 @@ body {
             color: #feac5e;
         }
     }
+
+    .todo-lists-elem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        
+    }
+
+      .divSection{
+        display: flex;
+        justify-content: center;
+        margin-left: 18rem;
+      }
     
         .main_todo_div {
-            width: 36rem;
-            /* display: grid;
-            grid-template-columns: 1fr 0.3fr; */
+            width: 30rem;
+            grid-template-columns: 1fr 0.3fr;
             display: flex;
             justify-content: center;
             align-items: center;
             height: auto;
+            gap: 2rem;
+            margin: 1rem auto;
         }
+            .main_todo_div li {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                flex: 1; 
+                text-align: left;
+            }
         button {
             height: 5rem;
         }
@@ -73,7 +95,7 @@ body {
         }
         input {
             padding: 6px 2px;
-            min-width: 32rem;
+            min-width: 41rem;
             font-size: 18px;
             border-radius: 0.6rem;
             border: none;
@@ -84,3 +106,7 @@ body {
             background-color: transparent;
             color: #f5ee62;
         }
+        .deleteBtn {
+            margin-left: 20rem;
+        }
+        
