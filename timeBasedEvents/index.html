@@ -97,6 +97,17 @@
       </div>
     </div>
 
-    <script></script>
+    <script>
+      const currentTime = () => {
+        let curTime = new Date().toLocaleTimeString();
+        document.getElementById("clock").innerText = curTime;
+      };
+      currentTime();
+     const intervalId = setInterval(() => {
+        currentTime();
+      }, 1000);
+
+      setTimeout(() => clearInterval(intervalId), 5000)
+    </script>
   </body>
 </html>
