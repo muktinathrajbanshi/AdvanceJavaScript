@@ -12,6 +12,8 @@
 // setTimeout(delayedFunction, 2000);
 // setTimeout(() => delayedFunction(5), 2000);
 
+
+
 //* 2. setInterval:
 //? The setInterval function is used to repeatedly execute a function or code block at a specified interval in milliseconds.
 
@@ -25,7 +27,6 @@
 // }
 
 // setInterval(repeatedFunction, 1000);
-
 //* 3. Clearing Timeout with clearTimeout:
 //? If you want to cancel a scheduled timeout before it occurs, you can use the clearTimeout function.
 
@@ -38,6 +39,7 @@
 //   console.log("This function was delayed by 2000 milliseconds (2 seconds).");
 // }
 // const myWork = setTimeout(delayedFunction, 2000);
+
 // clearTimeout(myWork);
 
 //todo Cancel the timeout before it occurs
@@ -55,7 +57,6 @@
 // }
 
 // const intervalID = setInterval(repeatedFunction, 1000);
-
 // clearInterval(intervalID);
 
 //todo Cancel the interval
@@ -64,4 +65,19 @@
 //*  Challenge Time
 //* =========================================
 
-//! Write a JavaScript program that defines a function called repeatedFunction. This function should log the message "This function repeats every 1000 milliseconds (1 second)" to the console. Then, set up an interval using setInterval() to call repeatedFunction every 1000 milliseconds.  Additionally, after 5 seconds have elapsed, use setTimeout() to clear the interval previously set up. Make sure to log the message "Interval cleared after 5 seconds." when the interval is cleared.
+//! Write a JavaScript program that defines a function called repeatedFunction. This function should log the 
+//! message "This function repeats every 1000 milliseconds (1 second)" to the console. Then, set up an interval 
+//! using setInterval() to call repeatedFunction every 1000 milliseconds.  Additionally, after 5 seconds have 
+//! elapsed, use setTimeout() to clear the interval previously set up. Make sure to log the message "Interval 
+//! cleared after 5 seconds." when the interval is cleared.
+
+const repeatedFunction = () => {
+    console.log("This function repeats every 1000 milliseconds (1 second)");
+};
+
+repeatedFunction();
+const intervalID = setInterval(repeatedFunction, 1000);
+
+setTimeout(() => {
+    clearInterval(intervalID);
+}, 5000);
