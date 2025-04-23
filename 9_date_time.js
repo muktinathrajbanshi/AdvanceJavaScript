@@ -25,7 +25,8 @@
 //? new Date(): Creates a Date object representing the current date and time.
 // const currentDate = new Date();
 // console.log(currentDate);
-//todo  This is the ISO 8601 format, which is a standard for representing dates and times. In this format, the date and time are represented together, separated by the letter "T". The "Z" at the end indicates that the time is in UTC (Coordinated Universal Time).
+//todo  This is the ISO 8601 format, which is a standard for representing dates and times. In this format, the date and time are
+//*  represented together, separated by the letter "T". The "Z" at the end indicates that the time is in UTC (Coordinated Universal Time).
 
 // But the same when you run on browser it will return more human-readable format.
 
@@ -58,7 +59,8 @@
 // const date6 = new Date(2024, 1, 19, 10, 44, 9, 274);
 // console.log(date6);
 
-//? 9: new Date(milliseconds): Creates a Date object representing the number of milliseconds since the Unix epoch (January 1, 1970, 00:00:00 UTC).
+//? 9: new Date(milliseconds): Creates a Date object representing the number of milliseconds since the Unix epoch
+//?  (January 1, 1970, 00:00:00 UTC).
 // const curMilliSeconds = new Date().getTime();
 // // const milliseconds = 1632090690883; // Example milliseconds
 // const dateFromMilliseconds = new Date(curMilliSeconds);
@@ -83,7 +85,7 @@
 
 // You can get various components of a date using the methods of the Date object:
 // const currentDate = new Date();
-// //? In a date object, the time is static.
+// // //? In a date object, the time is static.
 // const year = currentDate.getFullYear();
 // const month = currentDate.getMonth(); // 0-based index
 // const date = currentDate.getDate();
@@ -102,7 +104,7 @@
 //? setFullYear(yearValue[, monthValue[, dayValue]]): Sets the full year for a specified date according to local time.
 // console.log(date);
 
-// date.setFullYear(2025);
+// date.setFullYear(2026);
 // console.log(date); // Date object with the year set to 2025
 
 //? setMonth(monthValue[, dayValue]): Sets the month for a specified date according to local time.
@@ -157,7 +159,8 @@
 //* A few useful methods of the Date object in JavaScript
 //* ================================================================
 
-//? 1: toLocaleString(): Returns a string representing the date and time portion of a Date object using the current locale's conventions.
+//? 1: toLocaleString(): Returns a string representing the date and time portion of a Date object using the 
+//? current locale's conventions.
 // const date = new Date();
 // const localString = date.toLocaleString();
 // console.log(localString); // Example output: "2/19/2024, 4:30:00 PM" (depending on the locale)
@@ -196,15 +199,29 @@
 
 //! 1: Write a function to add a specified number of days to a given date.
 
-// // Example usage:
-// const date = new Date("2024-02-29");
+// const addDaysToDate = (date, extraDay) => {
+//     // console.log(date);
+//     // console.log(date.setDate(date.getDate() + extraDay));
+//     // console.log(new Date(1741392000000));
+//     let updatedDate = date.setDate(date.getDate() + extraDay)
+//     return new Date(updatedDate);
+// }
+
+// Example usage:
+// const date = new Date("2025-02-29");
 // const newDate = addDaysToDate(date, 7);
 // console.log(newDate);
 // console.log(newDate.toLocaleDateString());
 
 //! Question: Write a function to calculate the difference in days between two given dates.
 
-// // Example usage:
-// const date1 = new Date("2024-02-19");
-// const date2 = new Date("2024-03-01");
-// console.log(getDaysDifference(date1, date2)); // Output: 11 (difference in days)
+const getDaysDifference = (d1, d2) => {
+    let oneDay = 24 * 60 * 60 * 1000;
+    let diff = Math.abs(d1 - d2);
+    return Math.round(diff / oneDay);
+};
+
+// Example usage:
+const date1 = new Date("2025-02-19");
+const date2 = new Date("2025-03-01");
+console.log(getDaysDifference(date1, date2)); // Output: 10 (difference in days)
