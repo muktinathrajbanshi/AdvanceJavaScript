@@ -3,55 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suno Music Generator</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Music App</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Suno Music Generator</h1>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>SUNO</h2>
             <nav>
                 <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li>Home</li>
+                    <li>Create</li>
+                    <li>Library</li>
+                    <li>Explore</li>
+                    <li>Search</li>
                 </ul>
             </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h2>Create Your Own Music</h2>
-            <p>Generate unique music tracks with our AI-powered platform.</p>
-            <button class="cta-button">Get Started</button>
-        </section>
-
-        <section id="features">
-            <h2>Features</h2>
-            <div class="feature">
-                <i class="fas fa-music"></i>
-                <h3>AI Music Generation</h3>
-                <p>Create original music tracks in various genres.</p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-share-alt"></i>
-                <h3>Share & Collaborate</h3>
-                <p>Share your creations and collaborate with other musicians.</p>
-            </div>
-            <div class="feature">
-                <i class="fas fa-download"></i>
-                <h3>Download Your Tracks</h3>
-                <p>Download your music in high-quality formats.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Suno Music Generator. All rights reserved.</p>
-        </div>
-    </footer>
+            <button class="invite">Invite Friends</button>
+            <p>50 Credits</p>
+        </aside>
+        
+        <main class="workspace">
+            <header>
+                <h2>My Workspace</h2>
+                <div>
+                    <button>Filters</button>
+                    <button>Liked</button>
+                </div>
+            </header>
+            <section class="current-song">
+                <h3>"Bhulini Jaa" (Take It Easy) – A Rajbanshi</h3>
+                <p>Duration: 3:39</p>
+                <div class="controls">
+                    <button>Play</button>
+                    <button>Pause</button>
+                </div>
+            </section>
+            <section class="songs-list">
+                <ul>
+                    <li>You're My Light <span>(3:19)</span></li>
+                    <li>"Bhulini Jaa" (Take It Easy) <span>(2:59)</span></li>
+                    <li>Bhulini Jaa (Take It Easy) <span>(3:39)</span></li>
+                    <li>Timro Muskan <span>(4:02)</span></li>
+                </ul>
+            </section>
+        </main>
+        
+        <aside class="lyrics">
+            <h3>Lyrics</h3>
+            <textarea placeholder="Enter your own lyrics" rows="10" cols="30"></textarea>
+            <input type="text" placeholder="Style of Music"/>
+            <button class="submit">Submit</button>
+        </aside>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
