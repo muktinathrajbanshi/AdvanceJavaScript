@@ -1,7 +1,9 @@
 //* -------------------------
 //*  Scope in JavaScript
 //* -------------------------
-//? Scope in JavaScript refers to the context in which variables are declared and accessed. It defines the visibility and lifetime of variables. When a variable is declared, it is bound to a specific scope, and its accessibility is determined by that scope.
+//? Scope in JavaScript refers to the context in which variables are declared and accessed. It defines the
+//?  visibility and lifetime of variables. When a variable is declared, it is bound to a specific scope, and its 
+//? accessibility is determined by that scope.
 
 // todo We have a Global Scope, Function Scope and Block Scope
 
@@ -12,7 +14,9 @@
 
 //? Key Concept: The scope of a variable is determined by its position in the source code, specifically where it is declared.
 
-//? Lexical scoping in JavaScript is like a set of rules that determines where a variable can be used in your code. It follows the physical structure of your code, so if a variable is declared inside a function or block, it can usually be used only within that function or block.
+//? Lexical scoping in JavaScript is like a set of rules that determines where a variable can be used in your code.
+//?  It follows the physical structure of your code, so if a variable is declared inside a function or block, it 
+//? can usually be used only within that function or block.
 
 //  var a = 5;
 //  var b = 10;
@@ -21,31 +25,40 @@
 //* -------------------------
 //  * Scope Chaining:
 //* -------------------------
-//? Definition: Scope chaining is the process by which JavaScript, when looking for the value of a variable, checks the current scope and then looks in the outer (enclosing) scopes until it finds the variable or reaches the global scope.
+//? Definition: Scope chaining is the process by which JavaScript, when looking for the value of a variable, checks
+//?  the current scope and then looks in the outer (enclosing) scopes until it finds the variable or reaches the 
+//? global scope.
 
-//todo Key Concept: Variables in inner scopes have access to variables in their outer scopes, creating a chain of accessible scopes.
+//todo Key Concept: Variables in inner scopes have access to variables in their outer scopes, creating a chain of
+//accessible scopes.
 
 // * Global Scope:
 //? Variables: Variables declared outside of any function or block have global scope.
 //? Access: Global variables are accessible from any part of the code, including inside functions and blocks.
 
-//  var globalVariable = "I am a global variable";
+    const globalVariable = "I am a global variable";
 
-// function exampleFunction() {
-//   console.log(globalVariable); // Accessible within the function
-// }
-
-// console.log(globalVariable); // Accessible globally
+    function myFunction() {
+        // Function scope
+        const functionVariable = "I'm a function variable";
+        if (true) {
+            // Block scope
+            const blockVariable = "I'm a block variable";
+        }
+        console.log(functionVariable);
+    }
+    
+    myFunction();
 
 //  *Function Scope:
-// Variables: Variables declared inside a function have function scope.
-// Access: Function-scoped variables are only accessible within the function where they are declared.
-//  function exampleFunction() {
-//     var functionScopedVar = "I am a function-scoped variable";
-//     console.log(functionScopedVar); // Accessible within the function
-//   }
+    // Variables: Variables declared inside a function have function scope.
+    // Access: Function-scoped variables are only accessible within the function where they are declared.
+    // function exampleFunction() {
+    //     var functionScopedVar = "I am a function-scoped variable";
+    //     console.log(functionScopedVar); // Accessible within the function
+    // }
 
-// console.log(functionScopedVar); // Error: functionScopedVar is not defined
+    // console.log(functionScopedVar); // Error: functionScopedVar is not defined
 
 //  * Block Scope:
 // Variables: Variables declared with let and const inside a block (e.g., an if statement or a for loop) have block scope.

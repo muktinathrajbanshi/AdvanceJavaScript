@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background-color: #121212;
+    color: #FFFFFF;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.invite {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.workspace {
+    width: 60%;
+    padding: 20px;
+}
+
+.workspace header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.songs-list {
+    margin-top: 20px;
+}
+
+.songs-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lyrics {
+    width: 20%;
+    background-color: #1e1e1e;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
