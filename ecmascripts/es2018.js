@@ -32,11 +32,11 @@
     // console.log(others);
 
 //? Object and Spread operator
-    const obj1 = { a: 10, b: 20, c: 50};
-    const obj2 = { c: 30, d: 40};
+    // const obj1 = { a: 10, b: 20, c: 50};
+    // const obj2 = { c: 30, d: 40};
 
-    const newObj = { ...obj2, ...obj1 };
-    console.log(newObj);
+    // const newObj = { ...obj2, ...obj1 };
+    // console.log(newObj);
 
 //* ============================
 //*  Promise.finally()
