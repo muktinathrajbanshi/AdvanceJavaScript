@@ -21,8 +21,8 @@ let exponent = 3;
 
 //? In expressions:
 //! calculates the area of a circle with a radius of 5 units.
-    let area = Math.PI * 5 ** 2;
-    console.log(area.toFixed(2));
+    // let area = Math.PI * 5 ** 2;
+    // console.log(area.toFixed(2));
 
 //* ==============================
 //*  Array.includes()
