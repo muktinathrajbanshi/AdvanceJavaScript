@@ -67,21 +67,21 @@
 
 //? One more example
 // The optional chaining operator can be chained multiple times to access deeply nested properties:
-const person = {
-    name: "Muktinath",
-    address: {
-        city: "New York",
-        zipCode: 12345,
-        coordinates: {
-            latitude: 40.7128,
-            longitude: -74.006,
-        },
-    },
-    };
+// const person = {
+//     name: "Muktinath",
+//     address: {
+//         city: "New York",
+//         zipCode: 12345,
+//         coordinates: {
+//             latitude: 40.7128,
+//             longitude: -74.006,
+//         },
+//     },
+//     };
 
-    // Accessing deeply nested properties with optional chaining
-    const latitude = person.address?.coordinates?.latitude ?? "not present";
-    console.log(latitude);
+//     // Accessing deeply nested properties with optional chaining
+//     const latitude = person.address?.coordinates?.latitude ?? "not present";
+//     console.log(latitude);
 
 //* =======================================
 //*  Promise.allSettled()
