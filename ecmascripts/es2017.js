@@ -27,10 +27,10 @@
 // console.log(paddedName.length);
 
 //? Using padEnd() to pad from the end:
-    const companyName = "Kodyfier";
-    const paddedName = companyName.padEnd(13, "*");
-    //    const paddedName = companyName.padStart(15);
-    console.log(paddedName);
+    // const companyName = "Kodyfier";
+    // const paddedName = companyName.padEnd(13, "*");
+    // //    const paddedName = companyName.padStart(15);
+    // console.log(paddedName);
 
 //todo Key points:
 //? Both padStart() and padEnd() create a new padded string without modifying the original one.
@@ -44,14 +44,25 @@
 //* =====================
 //*  trailing commas
 //* ====================
-//? This feature allows to have trailing commas in function declarations, functions calls, array literal & object literal:
+//? This feature allows to have trailing commas in function declarations, functions calls, array literal & object
+//?  literal:
 
-// // Object literal
-// const person = {
-//   firstName: "John",
-//   lastName: "Doe",
-//   age: 30,
-// };
+   // Function parameter list
+//    function greet(name, age, boolean) {
+//     console.log(`Hello ${name}, you are ${age} years old.`);
+//    }
+   // Function call
+//    greet("Muktinath", 23, true,);
+
+   // Array literal
+//    const colors = ["red", "green", "blue"];
+
+   // Object literal
+//    const person = {
+//     firstName: "Muktinath",
+//     lastName: "Rajbanshi",
+//     age: 23,
+//    };
 
 //* ======================================
 //*  Object.entries() & Object.values()

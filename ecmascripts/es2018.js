@@ -22,13 +22,21 @@
 //* ES2018 introduces the same but for objects.
 
 //? Object and Rest Operator
-// const student = {
-//   age: 10,
-//   name: "vinod",
-//   isStudent: true,
-// };
+    // const student = {
+    // age: 10,
+    // name: "muktinath",
+    // isStudent: true,
+    // };
+
+    // const {age, ...others} = student;
+    // console.log(others);
 
 //? Object and Spread operator
+    const obj1 = { a: 10, b: 20, c: 50};
+    const obj2 = { c: 30, d: 40};
+
+    const newObj = { ...obj2, ...obj1 };
+    console.log(newObj);
 
 //* ============================
 //*  Promise.finally()
