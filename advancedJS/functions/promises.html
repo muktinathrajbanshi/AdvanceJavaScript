@@ -35,7 +35,8 @@
           apiBody.innerHTML = data.joke;
         })
         .catch((error) => {
-          console.log(error);
+          apiBody.innerHTML = `Api is not working`;
+          console.log("I am sorry");
         });
       };
 
