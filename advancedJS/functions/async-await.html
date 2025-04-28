@@ -41,8 +41,9 @@
         const data = await res.json();
         console.log(data.joke);
         apiBody.innerHTML = data.joke;
-
       }
+
+      fetchData();
 
       // Add event listener to fetch a new joke when the button is clicked
       document.getElementById("fetchJoke").addEventListener("click", fetchData);
